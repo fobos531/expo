@@ -55,7 +55,7 @@ internal struct ImagePickerOptions: Record {
   var orderedSelection: Bool = false
 }
 
-internal enum PresentationStyle: String, EnumArgument {
+internal enum PresentationStyle: String, Enumerable {
   case fullScreen
   case pageSheet
   case formSheet
@@ -94,7 +94,7 @@ internal enum PresentationStyle: String, EnumArgument {
   }
 }
 
-internal enum VideoQuality: Int, EnumArgument {
+internal enum VideoQuality: Int, Enumerable {
   case typeHigh = 0
   case typeMedium = 1
   case typeLow = 2
@@ -120,7 +120,7 @@ internal enum VideoQuality: Int, EnumArgument {
   }
 }
 
-internal enum MediaType: String, EnumArgument {
+internal enum MediaType: String, Enumerable {
   case all = "All"
   case videos = "Videos"
   case images = "Images"
@@ -150,7 +150,7 @@ internal enum MediaType: String, EnumArgument {
   }
 }
 
-internal enum VideoExportPreset: Int, EnumArgument {
+internal enum VideoExportPreset: Int, Enumerable {
   case passthrough = 0
   case lowQuality = 1
   case mediumQuality = 2
@@ -191,7 +191,7 @@ internal enum VideoExportPreset: Int, EnumArgument {
   }
 }
 
-internal enum CameraType: String, EnumArgument {
+internal enum CameraType: String, Enumerable {
   case back
   case front
 }
